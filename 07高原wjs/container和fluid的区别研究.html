@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap在wjs中的模板</title>
+
+    <!-- Bootstrap -->
+    <link href="lib/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <script src="lib/js/respond.js"></script>
+    <![endif]-->
+    <!-- 导入自己的css -->
+    <!-- 导入一个 base即可  base中 定义的是 我们的 字体图标-->
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <!--  里面添加了 我们自定义的 导航栏 样式 -->
+    <link rel="stylesheet" type="text/css" href="css/wjs.css">
+</head>
+<body>
+
+<div class="container-fluid">
+    <h1>你好，世界！</h1>
+</div>
+<!--container 类和container-fluid类的区别体现在是否有随视口宽度改变的margin存在。-->
+<!--container类所谓的自适应也是通过margin的改变来完成，随着屏幕宽度的改变，container字样的位置是会改变的，因为container类的宽度是750、970或1170。当屏幕宽度为950px时，container类的宽度时750（就是所谓的固定宽度）-->
+<!--container-fluid类的百分百宽度是指在固有的15px的padding前提下宽度总是当前视口的宽度。随着屏幕宽度的改变，container_fluid字样的位置不变，且布局也不变，此所谓“占据全部视口（viewport）的容器,自动实现响应式”-->
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="lib/js/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="lib/js/bootstrap.min.js"></script>
+</body>
+</html>
